@@ -24,6 +24,26 @@ var svg = d3.select("#scatter")
 var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
+// Set initial parameters of x and y aixs
+var selectedX = "poverty";
+var seledtedY = "healthcare";
+
+// Update the scale for x upon selected parameter
+function xScale(censusData, selectedX) {
+  var xLinearScale = d3.scaleLinear()
+    .domain([d3.min(censusData, d => d[selectedX]) - 1, d3.max(censusData, d => d[selectedX]) + 1])
+    .range([0, chartWidth]);
+  return xLinearScale;
+}
+
+// Update the scale for y upon selected parameter
+function yScale(censusData, selectedY) {
+  var yLinearScale = d3.scaleLinear()
+    .domain([d3.min(censusData, d => d[selectedY]) - 1, d3.max(censusData, d => d[selectedY]) + 1])
+    .range([chartHeight, 0]);
+  return yLinearScale;
+}
+
 // Load data from data.csv
 d3.csv("./assets/data/data.csv").then(function(censusData) {
 
