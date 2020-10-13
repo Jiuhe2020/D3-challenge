@@ -1,5 +1,6 @@
 # Data Journalism and D3
 ![Journalism](https://miro.medium.com/max/1400/1*YTg8i6oS0VZ-GqNZecWnMQ.jpeg)
+
 ## Deployment Link
 https://jiuhe2020.github.io/D3-challenge/
 
