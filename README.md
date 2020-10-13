@@ -13,7 +13,7 @@ A scatter plot was created between two of the data variables such as Healthcare 
 - Each circle included state abbreviations
 - Axes and labels were created and situated to the left and bottom of the chart
 <p align="center">
-  <img src="https://github.com/Jiuhe2020/D3-challenge/blob/master/images/Healthcare_vs_Poverty.png" height="75%" width="75%">
+  <img src="https://github.com/Jiuhe2020/D3-challenge/blob/master/images/Healthcare_vs_Poverty.png" height="80%" width="80%">
 </p>
 
 ## BONUS: Incorporate d3-tip
@@ -22,7 +22,7 @@ Why make a static graphic when D3 lets you interact with your data?
 - The transitions were animated for the circles' locations as well as the range of the axes
 - Tooltips were added to the circles and each tooltip can be displayed with the data that the user has selected
 <p align="center">
-  <img src="https://github.com/Jiuhe2020/D3-challenge/blob/master/images/D3-tip.png" height="75%" width="75%">
+  <img src="https://github.com/Jiuhe2020/D3-challenge/blob/master/images/D3-tip.png" height="80%" width="80%">
 </p>
 
 ---
